@@ -42,6 +42,11 @@ def main():
             if obj.collision(player) == True:
                 print("Game over!")
                 sys.exit()
+                
+            for shot in shots:
+                if shot.collision(obj) == True:
+                    shot.kill()
+                    obj.split()
         
         pygame.display.flip()
         
