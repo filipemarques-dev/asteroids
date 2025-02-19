@@ -13,7 +13,7 @@ class Asteroid(CircleShape):
             "white", 
             self.position, 
             self.radius, 
-            2
+            0
         )
         
     def update(self, dt):
